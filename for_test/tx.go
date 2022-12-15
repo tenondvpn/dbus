@@ -24,7 +24,7 @@ func main() {
 			res := tx.Send(data)
 			if res != 0 {
 				fmt.Printf("%d\n", i)
-			time.Sleep(time.Millisecond * 1000)
+				time.Sleep(time.Millisecond * 1000)
 				continue
 			}
 

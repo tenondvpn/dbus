@@ -46,6 +46,7 @@ func Init(localIp string, localPort uint16, etcdSpec string, dbPath string) bool
 	}
 
 	if !openDb(dbPath) {
+		logrus.Errorf("open failed err: %v", dbPath)
 		return false
 	}
 
@@ -55,6 +56,7 @@ func Init(localIp string, localPort uint16, etcdSpec string, dbPath string) bool
 	tcpClient = NewTcpClient(msgHandler.onMsg)
 	queuManager = NewQueueManger()
 	go tcpServer.StartServer(globalLocalIp + ":" + fmt.Sprintf("%d", globalLocalPort))
+	logrus.Info("init success!",)
 	return true
 }
 
