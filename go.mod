@@ -1,4 +1,4 @@
-module git.amberainsider.com/metabase/dbus
+module github.com/tenondvpn/dbus
 
 go 1.16
 

@@ -44,7 +44,7 @@ package main
 import (
 	"fmt"
 
-	dbus "git.amberainsider.com/metabase/dbus"
+	dbus "github.com/tenondvpn/dbus"
 )
 
 var (
@@ -85,7 +85,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	dbus "git.amberainsider.com/metabase/dbus"
+	dbus "github.com/tenondvpn/dbus"
 )
 
 func main() {
