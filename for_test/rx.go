@@ -28,7 +28,7 @@ func main() {
 	}
 	// test etcd server: "82.156.224.174:2379"
 	// db_path level db path example: "./rxdata"
-	dbus.Init("127.0.0.1", 7891, "82.156.224.174:2379", "./rxdb")
+	dbus.Init("127.0.0.1", 7891, "127.0.0.1:2379", "./rxdb")
 	// 修改queueName
 	queue := dbus.CreateQueue("xl_q4", false, 3600, dbus.ProtoTypeTcp)
 	queue.CreateReceiver(TmpRxCallback)

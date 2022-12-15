@@ -13,7 +13,7 @@ func main() {
 		fmt.Printf("failed")
 	}
 
-	dbus.Init("127.0.0.1", 8001, "82.156.224.174:2379", "./txdata")
+	dbus.Init("127.0.0.1", 8001, "127.0.0.1:2379", "./txdata")
 	queue := dbus.CreateQueue("xl_q4", false, 3600, dbus.ProtoTypeTcp)
 	tx := queue.CreateTransmitter("")
 	time.Sleep(time.Millisecond * 100)
