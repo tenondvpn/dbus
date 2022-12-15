@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 	"github.com/google/gops/agent"
-	dbus "git.amberainsider.com/metabase/dbus"
+	dbus "github.com/tenondvpn/dbus"
 )
 
 func main() {

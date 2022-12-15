@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/google/gops/agent"
-	dbus "git.amberainsider.com/metabase/dbus"
+	dbus "github.com/tenondvpn/dbus"
 )
 
 var (
